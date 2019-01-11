@@ -14,6 +14,9 @@
 		1072278521E8700000CD5246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1072278321E8700000CD5246 /* LaunchScreen.storyboard */; };
 		1072279021E8700000CD5246 /* ScreenVideoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1072278F21E8700000CD5246 /* ScreenVideoDemoTests.swift */; };
 		1072279B21E8700000CD5246 /* ScreenVideoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1072279A21E8700000CD5246 /* ScreenVideoDemoUITests.swift */; };
+		107227AA21E8762B00CD5246 /* ReplayToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107227A921E8762B00CD5246 /* ReplayToolsView.swift */; };
+		107227AD21E8769F00CD5246 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107227AC21E8769F00CD5246 /* Color.swift */; };
+		107227AF21E876FB00CD5246 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107227AE21E876FB00CD5246 /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		1072279621E8700000CD5246 /* ScreenVideoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenVideoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1072279A21E8700000CD5246 /* ScreenVideoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenVideoDemoUITests.swift; sourceTree = "<group>"; };
 		1072279C21E8700000CD5246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107227A921E8762B00CD5246 /* ReplayToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayToolsView.swift; sourceTree = "<group>"; };
+		107227AC21E8769F00CD5246 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		107227AE21E876FB00CD5246 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		1072277921E86FFF00CD5246 /* ScreenVideoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				107227AB21E8769300CD5246 /* Common */,
+				107227A821E8757800CD5246 /* Kit */,
 				1072277A21E86FFF00CD5246 /* AppDelegate.swift */,
 				1072277C21E86FFF00CD5246 /* ViewController.swift */,
 				1072277E21E86FFF00CD5246 /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				1072279C21E8700000CD5246 /* Info.plist */,
 			);
 			path = ScreenVideoDemoUITests;
+			sourceTree = "<group>";
+		};
+		107227A821E8757800CD5246 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				107227A921E8762B00CD5246 /* ReplayToolsView.swift */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		107227AB21E8769300CD5246 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				107227AC21E8769F00CD5246 /* Color.swift */,
+				107227AE21E876FB00CD5246 /* Tools.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107227AA21E8762B00CD5246 /* ReplayToolsView.swift in Sources */,
+				107227AD21E8769F00CD5246 /* Color.swift in Sources */,
 				1072277D21E86FFF00CD5246 /* ViewController.swift in Sources */,
 				1072277B21E86FFF00CD5246 /* AppDelegate.swift in Sources */,
+				107227AF21E876FB00CD5246 /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG2ZSL4NR6;
 				INFOPLIST_FILE = ScreenVideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG2ZSL4NR6;
 				INFOPLIST_FILE = ScreenVideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
